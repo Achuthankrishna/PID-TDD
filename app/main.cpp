@@ -46,7 +46,7 @@ double d_t, double current_state, double target_state) {
  */
 double PID::returnPID(double K_p,double K_i)
 {
-    return K_p,K_i;
+    return K_p;
 }
 /**
  * @brief Method to compute method 
@@ -61,5 +61,5 @@ double PID::computePID(double K_p,double K_i)
 }
 
 int main () {
-    PID controller(1, 1, 1, 1,1,1);    
+    PID controller(1.0, 1.0, 1.0, 1.0,1.0,1.0);    
     return 0;}
