@@ -1,7 +1,7 @@
 /**
  * @file PID.hpp
  * @author Jerry Pittman, Jr. (jpittma1@umd.edu)
- * @brief 
+ * @brief PID controller PID-TDD Project
  * @version 0.1
  * @date 2023-10-03
  * 

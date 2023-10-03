@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "pid.hpp"
+#include "../include/PID.hpp"
 
 int main(int argc, char** argv) {
   ::testing::InitGoogleTest(&argc, argv);
