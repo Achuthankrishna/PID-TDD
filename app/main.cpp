@@ -10,9 +10,9 @@
  * 
  */
 
-#include "../include/PID.hpp"
-#include <cmath>
+
 #include <iostream>
+#include "../include/PID.hpp"
 
 /**
  * @brief Construct a new PID::PID object
@@ -30,14 +30,10 @@ double d_t, double current_state, double target_state) {
     Ki = K_i;
     Kd = K_d;
     dt = d_t;
-    curr = current_state;  
-    target = target_state;    // final state
+    curr = current_state;
+    target = target_state;
     curerr = 0;
     prevError = 0;
     integral = 0;
 }
-
-int main () {
-    
-    return 0;
-}
+int main () {return 0;}

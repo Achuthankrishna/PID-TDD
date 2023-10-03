@@ -1,6 +1,6 @@
 /**
  * @file PID.hpp
- * @author Jerry Pittman, Jr. (jpittma1@umd.edu)
+ * @author Jerry Pittman (jpitman@umd.edu)
  *         Vyshnav Achuthan (vyachu07@umd.edu)
  * @brief 
  * @version 0.1
@@ -9,14 +9,9 @@
  * @copyright Copyright (c) 2023
  * 
  */
-
 #pragma once
-
 #include <iostream>
-/**
- * @brief PID Constructor Class
- * 
- */
+
 class PID {
  private:
     double Kp;            // Proportional Gain
