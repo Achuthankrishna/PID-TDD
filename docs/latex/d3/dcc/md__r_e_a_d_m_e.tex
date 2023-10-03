@@ -1,0 +1,36 @@
+ENPM808X TDD Project (Fall 2023)
+
+ \href{https://codecov.io/gh/Achuthankrishna/PID-TDD}{\texttt{ }} \mbox{[}\mbox{]}(LICENSE)\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Part 1 Authors}\label{md__r_e_a_d_m_e_autotoc_md1}
+Driver\+: Jerry Pittman, Jr. (jpittma1) Navigator\+: Vyshnav Achuthankrishna (Achuthankrishna)\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{Standard install via command-\/line}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\# Download the code:}
+\DoxyCodeLine{  git clone https://github.com/Achuthankrishna/PID-\/TDD}
+\DoxyCodeLine{  cd PID-\/TDD}
+\DoxyCodeLine{\# Configure the project and generate a native build system:}
+\DoxyCodeLine{  \# Must re-\/run this command whenever any CMakeLists.txt file has been changed.}
+\DoxyCodeLine{  cmake -\/S ./ -\/B build/}
+\DoxyCodeLine{\# Compile and build the project:}
+\DoxyCodeLine{  \# rebuild only files that are modified since the last build}
+\DoxyCodeLine{  cmake -\/-\/build build/}
+\DoxyCodeLine{  \# or rebuild everything from scracth}
+\DoxyCodeLine{  cmake -\/-\/build build/ -\/-\/clean-\/first}
+\DoxyCodeLine{  \# to see verbose output, do:}
+\DoxyCodeLine{  cmake -\/-\/build build/ -\/-\/verbose}
+\DoxyCodeLine{\# Run program:}
+\DoxyCodeLine{  ./build/app/shell-\/app}
+\DoxyCodeLine{\# Run tests:}
+\DoxyCodeLine{  cd build/; ctest; cd -\/}
+\DoxyCodeLine{  \# or if you have newer cmake}
+\DoxyCodeLine{  ctest -\/-\/test-\/dir build/}
+\DoxyCodeLine{\# Build docs:}
+\DoxyCodeLine{  cmake -\/-\/build build/ -\/-\/target docs}
+\DoxyCodeLine{  \# open a web browser to browse the doc}
+\DoxyCodeLine{  open docs/html/index.html}
+\DoxyCodeLine{\# Clean}
+\DoxyCodeLine{  cmake -\/-\/build build/ -\/-\/target clean}
+\DoxyCodeLine{\# Clean and start over:}
+\DoxyCodeLine{  rm -\/rf build/}
+
+\end{DoxyCode}
+ 
