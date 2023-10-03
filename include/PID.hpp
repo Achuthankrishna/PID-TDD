@@ -10,6 +10,8 @@
  * 
  */
 #pragma once
+#ifndef INCLUDE_PID_HPP
+#define INCLUDE_PID_HPP
 #include <iostream>
 
 class PID {
@@ -29,3 +31,5 @@ class PID {
     double returnPID(double,double);
     double computePID(double,double);
 };
+
+#endif
