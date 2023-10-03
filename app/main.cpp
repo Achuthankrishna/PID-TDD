@@ -35,5 +35,10 @@ double d_t, double current_state, double target_state) {
     curerr = 0;
     prevError = 0;
     integral = 0;
+
 }
-int main () {return 0;}
+int main () {
+    PID controller(1, 1, 1, 1,1,1);
+    
+
+    return 0;}
