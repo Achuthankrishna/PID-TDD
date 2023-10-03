@@ -1,1 +1,0 @@
-/usr/bin/c++ --static CMakeFiles/shell-app.dir/main.cpp.o -o shell-app 
