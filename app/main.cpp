@@ -37,8 +37,29 @@ double d_t, double current_state, double target_state) {
     integral = 0;
 
 }
-int main () {
-    PID controller(1, 1, 1, 1,1,1);
-    
+/**
+ * @brief Method to return gain constants
+ * 
+ * @param K_p 
+ * @param K_i 
+ * @return double 
+ */
+double PID::returnPID(double K_p,double K_i)
+{
+    return K_p,K_i;
+}
+/**
+ * @brief Method to compute method 
+ * 
+ * @param K_p 
+ * @param K_i 
+ * @return double 
+ */
+double PID::computePID(double K_p,double K_i)
+{
+    return (K_p*K_i);
+}
 
+int main () {
+    PID controller(1, 1, 1, 1,1,1);    
     return 0;}

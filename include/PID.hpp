@@ -26,4 +26,6 @@ class PID {
 
  public:
     PID(double, double, double, double, double, double);
+    double returnPID(double,double);
+    double computePID(double,double);
 };
