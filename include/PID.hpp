@@ -14,12 +14,12 @@
 
 class PID {
  private:
-    double Kp;            // Proportional Gain
-    double Ki;            // Integral Gain
-    double Kd;            // Differential Gain
-    double dt;            // time difference
-    double curr;  // initial state
-    double target;   // final state
+    double Kp;
+    double Ki;
+    double Kd;
+    double dt;
+    double curr;
+    double target;
     double curerr;
     double prevError;
     double integral;
