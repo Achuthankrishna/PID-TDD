@@ -71,7 +71,7 @@ execute_process(COMMAND cmake -E create_symlink
 #
 option(WANT_COVERAGE "this option enable coverage" ON)
 if(NOT CMAKE_BUILD_TYPE MATCHES "Debug")
-  set(WANT_COVERAGE OFF)
+  set(WANT_COVERAGE ON)
 endif()
 
 if(WANT_COVERAGE)
