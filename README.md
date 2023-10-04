@@ -1,7 +1,7 @@
 # PID-TDD
 ENPM808X TDD Project (Fall 2023)
 
-![CICD Workflow status](https://github.com/Achuthankrishna/PID-TDD/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg) [![codecov]([![codecov](https://codecov.io/gh/Achuthankrishna/PID-TDD/graph/badge.svg?token=VMLNO6Y0IQ)](https://codecov.io/gh/Achuthankrishna/PID-TDD))](https://app.codecov.io/gh/Achuthankrishna/PID-TDD) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![CICD Workflow status](https://github.com/Achuthankrishna/PID-TDD/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg) [![codecov](https://codecov.io/gh/Achuthankrishna/PID-TDD/graph/badge.svg?token=VMLNO6Y0IQ)](https://codecov.io/gh/Achuthankrishna/PID-TDD) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Part 1 Authors
 Driver: Jerry Pittman, Jr. (jpittma1)
