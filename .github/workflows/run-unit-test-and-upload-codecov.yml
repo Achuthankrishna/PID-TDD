@@ -33,27 +33,25 @@ jobs:
     # ubuntu-latest, ubuntu-22.04, etc.
     runs-on: ubuntu-22.04
     
-     steps:
-      # We want to use GitHub CI checkout version 3 for checking out the branch
+    steps:
+      # We want to use GitHub CI checkout version 3 to check out our branch
       - uses: actions/checkout@v3
       
       # Install some system pacakges
-      - name: Install packages
-        run: sudo apt install -y lcov
-
-      # Run CMake to setup compilation flags
-      - name: Configure Coverage CMake 
-        run: cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug -B ${{github.workspace}}/build 
-      
-      # Compile and executables
-      - name: Build Coverage
-        working-directory: ${{github.workspace}}/build
-        run: make
-
-      # Run test suite and compute code coverage
-      - name: Run Test Coverage
-        working-directory: ${{github.workspace}}/build
-        run: make code_coverage
+      - name: Install build packages
+        run: |
+          sudo apt update
+          sudo apt install -y software-properties-common
+          sudo apt install -y doxygen lcov gcovr
+      - name: Install Doxygen
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y doxygen
+      # Build, run unit test, and generate coverage report
+      - name: Configure CMake flags and build exectables
+        run: |
+          cmake -D WANT_COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug -S ./ -B build/
+          cmake --build build/ --clean-first --target all test_coverage
 
       # Upload coverage result to CodeCov
       - name: Upload coverage result to CodeCov
