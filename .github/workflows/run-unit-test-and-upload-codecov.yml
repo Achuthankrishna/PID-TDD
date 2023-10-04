@@ -38,12 +38,17 @@ jobs:
       - uses: actions/checkout@v3
       
       # Install some system pacakges
+      - name: Install Doxygen
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y doxygen
+
       - name: Install build packages
         run: |
           sudo apt update
           sudo apt install -y software-properties-common
           sudo apt install -y doxygen lcov gcovr
-          
+                
       # Build, run unit test, and generate coverage report
       - name: Configure CMake flags and build exectables
         run: |
