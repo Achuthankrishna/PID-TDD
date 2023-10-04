@@ -33,11 +33,15 @@ jobs:
         run: |
           sudo apt-get update -q
           sudo apt-get install -y doxygen
-      # Build, run unit test, and generate coverage report
-      - name: Configure CMake flags and build exectables
+      - name: Configure and Build
         run: |
           cmake -D WANT_COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug -S ./ -B build/
-          cmake --build build/ --clean-first --target all test_coverage
+          cmake --build build/
+
+      - name: Run Tests and Generate Code Coverage
+        run: |
+          cd build/
+          ctest --output-on-failure
       # Upload coverage result to CodeCov
       - name: Upload coverage result to CodeCov
         uses: codecov/codecov-action@v3
