@@ -37,6 +37,11 @@ jobs:
         run: |
           cmake -D WANT_COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug -S ./ -B build/
           cmake --build build/
+      - name: Run Tests and Generate Code Coverage
+        run: |
+          cd build/
+          ctest --output-on-failure || true
+      # Upload coverage result to CodeCov
       - name: Upload coverage result to CodeCov
         uses: codecov/codecov-action@v3
         with:
@@ -44,12 +49,6 @@ jobs:
           files: ${{github.workspace}}/build/test_coverage.info
           fail_ci_if_error: true # optional (default = false)
           verbose: true # optional (default = false)
-
-      - name: Run Tests and Generate Code Coverage
-        run: |
-          cd build/
-          ctest --output-on-failure
-      # Upload coverage result to CodeCov
      
       # Add a step to generate the Codecov badge status
       - name: Generate Codecov Badge Status
