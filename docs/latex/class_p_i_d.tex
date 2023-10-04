@@ -1,0 +1,111 @@
+\hypertarget{class_p_i_d}{}\doxysection{PID Class Reference}
+\label{class_p_i_d}\index{PID@{PID}}
+
+
+{\ttfamily \#include $<$PID.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_i_d_a49a7b332ab687bb29d535c919903e104}{PID}} (double, double, double, double, double, double)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_p_i_d_a49a7b332ab687bb29d535c919903e104}{PID\+::\+PID}} object. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_p_i_d_a6a853b0a0ce67acc1ab3af53da4175b1}{return\+PID}} (double, double)
+\begin{DoxyCompactList}\small\item\em Method to return gain constants. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_p_i_d_abe984f668725b2715a03f79c7da823b9}{compute\+PID}} (double, double)
+\begin{DoxyCompactList}\small\item\em Method to compute method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 17 of file PID.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_i_d_a49a7b332ab687bb29d535c919903e104}\label{class_p_i_d_a49a7b332ab687bb29d535c919903e104}} 
+\index{PID@{PID}!PID@{PID}}
+\index{PID@{PID}!PID@{PID}}
+\doxysubsubsection{\texorpdfstring{PID()}{PID()}}
+{\footnotesize\ttfamily PID\+::\+PID (\begin{DoxyParamCaption}\item[{double}]{K\+\_\+p,  }\item[{double}]{K\+\_\+i,  }\item[{double}]{K\+\_\+d,  }\item[{double}]{d\+\_\+t,  }\item[{double}]{current\+\_\+state,  }\item[{double}]{target\+\_\+state }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_p_i_d_a49a7b332ab687bb29d535c919903e104}{PID\+::\+PID}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em K\+\_\+p} & proportional gain \\
+\hline
+{\em K\+\_\+i} & integral gain \\
+\hline
+{\em K\+\_\+d} & derivative gain \\
+\hline
+{\em d\+\_\+t} & change in time \\
+\hline
+{\em current\+\_\+state} & starting state \\
+\hline
+{\em target\+\_\+state} & output/end goal \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file PID.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_i_d_abe984f668725b2715a03f79c7da823b9}\label{class_p_i_d_abe984f668725b2715a03f79c7da823b9}} 
+\index{PID@{PID}!computePID@{computePID}}
+\index{computePID@{computePID}!PID@{PID}}
+\doxysubsubsection{\texorpdfstring{computePID()}{computePID()}}
+{\footnotesize\ttfamily double PID\+::compute\+PID (\begin{DoxyParamCaption}\item[{double}]{K\+\_\+p,  }\item[{double}]{K\+\_\+i }\end{DoxyParamCaption})}
+
+
+
+Method to compute method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em K\+\_\+p} & \\
+\hline
+{\em K\+\_\+i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file PID.\+cpp.
+
+\mbox{\Hypertarget{class_p_i_d_a6a853b0a0ce67acc1ab3af53da4175b1}\label{class_p_i_d_a6a853b0a0ce67acc1ab3af53da4175b1}} 
+\index{PID@{PID}!returnPID@{returnPID}}
+\index{returnPID@{returnPID}!PID@{PID}}
+\doxysubsubsection{\texorpdfstring{returnPID()}{returnPID()}}
+{\footnotesize\ttfamily double PID\+::return\+PID (\begin{DoxyParamCaption}\item[{double}]{K\+\_\+p,  }\item[{double}]{K\+\_\+i }\end{DoxyParamCaption})}
+
+
+
+Method to return gain constants. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em K\+\_\+p} & \\
+\hline
+{\em K\+\_\+i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Definition at line 45 of file PID.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_p_i_d_8hpp}{PID.\+hpp}}\item 
+app/\mbox{\hyperlink{_p_i_d_8cpp}{PID.\+cpp}}\end{DoxyCompactItemize}
