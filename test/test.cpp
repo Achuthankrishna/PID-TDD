@@ -13,34 +13,40 @@
 #include "../include/PID.hpp"
 #include "PID.hpp"
 
-// /**
-//  * @brief PID Object for unit tests
-//  * 
-//  */
-// PID test(1.0,1.0,1.0,1.0,1.0,1.0);
+/**
+ * @brief PID Object for unit tests
+ * 
+ */
+PID test(1.0,1.0,1.0,1.0,1.0,1.0);
 
 // /**
 //  * @brief Construct a new TEST object
 //  * 
 //  */
-// TEST(PID_test, test_computePID) {
+// TEST(dummy_test, this_should_pass) {
+//   EXPECT_EQ(1, 1);
+// }
+
+/**
+ * @brief Construct a new TEST object
+ * 
+ */
+
+TEST(PID_test, test_computePID) {
    
-//   // double testVal = test.computePID(1.0,1.0);
-//   EXPECT_NEAR(test.computePID(1.0,1.0), -3.0, 0.01);
-//   // EXPECT_EQ(test.returnPID(1.0, 1.0), 3.0);
-// }
-
-// /**
-//  * @brief Construct a new TEST object
-//  * 
-//  */
-// TEST(PID_test, test_output){
-//   // PID test(1.0,1.0,1.0,1.0,1.0,1.0);
-//   // double testVal = test.returnPID(1.0,1.0);
-//   EXPECT_NEAR(test.returnPID(1.0,1.0), -3.0, 0.01);
-//   // EXPECT_EQ(test.computePID(1.0, 1.0), 2.0);
-// }
-
-TEST(dummy_test, this_should_pass) {
-  EXPECT_EQ(1, 1);
+  // double testVal = test.computePID(1.0,1.0);
+  EXPECT_NEAR(test.computePID(1.0,1.0), -3.0, 0.01);
+  // EXPECT_EQ(test.returnPID(1.0, 1.0), 3.0);
 }
+
+/**
+ * @brief Construct a new TEST object
+ * 
+ */
+TEST(PID_test, test_output){
+  // PID test(1.0,1.0,1.0,1.0,1.0,1.0);
+  // double testVal = test.returnPID(1.0,1.0);
+  EXPECT_NEAR(test.returnPID(1.0,1.0), -3.0, 0.01);
+  // EXPECT_EQ(test.computePID(1.0, 1.0), 2.0);
+}
+
