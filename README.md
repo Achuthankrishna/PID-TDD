@@ -13,7 +13,7 @@ Navigator: Vyshnav Achuthan (Achuthankrishna)
 ## Standard install via command-line
 ```bash
 # Download the code:
-  git clone https://github.com/Achuthankrishna/PID-TDD
+  git clone https://github.com/Achuthankrishna/PID-TDD.git
   cd PID-TDD
 # Configure the project and generate a native build system:
   # Must re-run this command whenever any CMakeLists.txt file has been changed.
