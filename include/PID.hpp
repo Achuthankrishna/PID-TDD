@@ -3,7 +3,7 @@
  * @author Jerry Pittman (jpitman@umd.edu)
  *         Vyshnav Achuthan (vyachu07@umd.edu)
  * @brief PID controller Class header file
- * @version 0.1
+ * @version 0.2
  * @date 2023-10-03
  * 
  * @copyright Copyright (c) 2023
