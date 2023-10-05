@@ -4,7 +4,7 @@ ENPM808X TDD Project (Fall 2023)
 ![CICD Workflow status](https://github.com/Achuthankrishna/PID-TDD/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg) [![codecov](https://codecov.io/gh/Achuthankrishna/PID-TDD/graph/badge.svg)](https://codecov.io/gh/Achuthankrishna/PID-TDD) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Part 1 Authors
-Driver: Jerry Pittman, Jr. (jpittma1)
+Driver: Jerry Pittman, Jr. (jpittma1)<br>
 Navigator: Vyshnav Achuthan (Achuthankrishna)
 
 ## UML Diagram 
