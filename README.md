@@ -11,6 +11,11 @@ Navigator: Jerry Pittman, Jr. (jpittma1)
 Driver: Neha Nitin Madhekar (NehaMadhekar09) <br> 
 Navigator: Rashmi Kapu (Rashmikapu)
 
+## NOTES and TO-DO
+--> Increase the functionality to be able to take user input for velocities other class variables. <br>
+--> Implement more constructors for the PID class in order to make the program more robust and write unit <br>
+tests for each of them.
+
 ## UML Diagram 
 ![alt text](/UML/UML1.png)
 
