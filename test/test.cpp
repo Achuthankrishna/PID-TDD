@@ -17,14 +17,14 @@
  * @brief PID Object for unit tests
  * 
  */
-PID test(1.0,1.0,1.0,1.0,1.0,1.0);
+PID test(0.1,0.5, 0.01, 0.1, 0.0, 10.0);
 
 /**
  * @brief Construct a new TEST object to test computePID Method
  * 
  */
 TEST(PID_test, test_computePID) {
-  EXPECT_NEAR(test.computePID(1.0,1.0), -3.0, 0.01);
+  EXPECT_NEAR(test.computePID(0.1,0.5), 10.0, 0.01);
 }
 
 /**
@@ -32,6 +32,18 @@ TEST(PID_test, test_computePID) {
  * 
  */
 TEST(PID_test, test_output){
-  EXPECT_NEAR(test.returnPID(1.0,1.0), -3.0, 0.01);
+  EXPECT_NEAR(test.returnPID(0.1,0.5), 0.1, 0.001);
 }
+/**
+ * @brief PID Object for unit tests
+ * 
+ */
+PID test1(0.1,0.5, 0.01, 0.1, 1.0, 81.0);
 
+/**
+ * @brief Construct a new TEST object to test computePID Method
+ * 
+ */
+TEST(PID_test, test_compute){
+  ASSERT_GT(test1.computePID(0.1,0.5), 5);
+}

@@ -16,5 +16,7 @@
 #include "PID.hpp"
 
 int main () {
-    // PID controller(1.0, 1.0, 1.0, 1.0, 1.0, 1.0);    
+    
+    PID controller(0.1,0.5, 0.01, 0.1, 0.0,100.0  );    
+    std::cout<<controller.computePID(1.0, 1.0);
     return 0;}

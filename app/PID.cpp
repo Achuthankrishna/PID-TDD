@@ -11,6 +11,7 @@
 #include <iostream>
 #include "../include/PID.hpp"
 #include "PID.hpp"
+#include <cmath> 
 
 /**
  * @brief Construct a new PID::PID object
@@ -53,7 +54,30 @@ double PID::returnPID(double K_p,double K_i)
  * @param K_i 
  * @return double 
  */
-double PID::computePID(double K_p,double K_i)
+double PID::computePID(double K_p_1,double K_i_1)
 {
-    return (K_p*K_i);
+//   double error=DOUBLE_MAX; 
+  int i = 0;
+  while(true) {
+    double curr_output;
+    double error = target - curr;
+
+    double Pout = Kp * error;
+
+    integral+= error* dt;
+    double Iout = Ki * integral;
+
+    double derivative = (error-prevError )/ dt;
+    double Dout = Kd*derivative ;
+
+    double output = Pout + Iout + Dout;
+
+    curr+= output;
+    prevError = error;
+    i+=1;
+    if (fabs(target - curr) < 0.000001 )
+        return curr ;
+    
+  }   
+  
 }

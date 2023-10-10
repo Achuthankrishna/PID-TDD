@@ -2,6 +2,7 @@
 add_executable(shell-app
   # list of source cpp files:
   main.cpp
+  PID.cpp
   )
 
 # Any include directories needed to build this target.
