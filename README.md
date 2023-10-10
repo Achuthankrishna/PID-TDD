@@ -7,6 +7,10 @@ ENPM808X TDD Project (Fall 2023)
 Driver: Vyshnav Achuthan (Achuthankrishna) <br> 
 Navigator: Jerry Pittman, Jr. (jpittma1)
 
+## Part 2 Authors
+Driver: Neha Nitin Madhekar (NehaMadhekar09) <br> 
+Navigator: Rashmi Kapu (Rashmikapu)
+
 ## UML Diagram 
 ![alt text](/UML/UML1.png)
 
