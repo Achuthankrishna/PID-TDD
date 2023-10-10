@@ -7,6 +7,15 @@ ENPM808X TDD Project (Fall 2023)
 Driver: Vyshnav Achuthan (Achuthankrishna) <br> 
 Navigator: Jerry Pittman, Jr. (jpittma1)
 
+## Part 2 Authors [![codecov](https://codecov.io/gh/Rashmikapu/PID-TDD/graph/badge.svg)](https://codecov.io/gh/Rashmikapu/PID-TDD)
+Driver: Neha Nitin Madhekar (NehaMadhekar09) <br> 
+Navigator: Rashmi Kapu (Rashmikapu)
+
+## NOTES and TO-DO
+--> Increase the functionality to be able to take user input for velocities and other class variables. <br>
+--> Implement more constructors for the PID class in order to make the program more robust and write unit <br>
+tests for each of them.
+
 ## UML Diagram 
 ![alt text](/UML/UML1.png)
 
