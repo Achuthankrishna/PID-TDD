@@ -14,6 +14,10 @@
 #define INCLUDE_PID_HPP
 #include <iostream>
 
+/**
+ * @brief PID Class Constructor
+ * 
+ */
 class PID {
  private:
     double Kp;
