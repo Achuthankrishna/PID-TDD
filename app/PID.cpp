@@ -56,25 +56,33 @@ double PID::returnPID(double K_p,double K_i)
  */
 double PID::computePID(double K_p_1,double K_i_1)
 {
-//   double error=DOUBLE_MAX; 
-  int i = 0;
-  while(true) {
-    double curr_output;
+  // Run the loop 
+  while(true) 
+  {
+    // Compute error
     double error = target - curr;
 
+    // Calculate the proportional term
     double Pout = Kp * error;
 
+    // Calculate the integral term
     integral+= error* dt;
     double Iout = Ki * integral;
 
+    // Calculate the derivative term
     double derivative = (error-prevError )/ dt;
     double Dout = Kd*derivative ;
 
+    // Calculate the overall controller output by summing P, I, and D terms
     double output = Pout + Iout + Dout;
 
+    // Update the current value based on the controller output
     curr+= output;
+
+    // Update the previous error for the next iteration
     prevError = error;
-    i+=1;
+
+    // Check if the error is very close to zero
     if (fabs(target - curr) < 0.000001 )
         return curr ;
     

@@ -10,6 +10,17 @@ Navigator: Jerry Pittman, Jr. (jpittma1)
 ## UML Diagram 
 ![alt text](/UML/UML1.jpeg)
 
+## Part 2 Authors
+Driver: Neha Nitin Madhekar (NehaMadhekar09)<br>
+Navigator: Rashmi Kapu (Rashmikapu)
+
+## Notes
+1. Modified the test cases as the previous test cases were failing because of incorrect Kp,Ki and Kd.
+2. Added a new test case with ASSERT_GT test function.
+
+### TODO: 
+1. Add a Test case for checkking non-zero values in the pipeline.
+
 ## Standard install via command-line
 ```bash
 # Download the code:
