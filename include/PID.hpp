@@ -28,8 +28,8 @@ class PID {
 
  public:
     PID(double, double, double, double, double, double);
-    double returnPID(double,double);
-    double computePID(double,double);
+    bool check(double, double, double, double, double);
+    double computePID();
 };
 
 #endif

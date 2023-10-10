@@ -8,7 +8,7 @@ Driver: Vyshnav Achuthan (Achuthankrishna) <br>
 Navigator: Jerry Pittman, Jr. (jpittma1)
 
 ## UML Diagram 
-![alt text](/UML/UML1.jpeg)
+![alt text](/UML/UML1.png)
 
 ## Standard install via command-line
 ```bash

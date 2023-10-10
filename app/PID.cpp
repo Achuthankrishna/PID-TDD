@@ -1,6 +1,6 @@
 /**
  * @file PID.cpp
- * @author Jerry Pittman, Jr. (jpittma1@umd.edu)
+ * @author Jerry Pittman, Jr. (jpittma1@umd.edu),Vyshnav Achuthan (vyachu07@umd.edu)
  * @brief For PID class implementation
  * @version 0.1
  * @date 2023-10-03
@@ -8,6 +8,7 @@
  * @copyright Copyright (c) 2023
  * 
  */
+
 #include <iostream>
 #include "../include/PID.hpp"
 #include "PID.hpp"
@@ -36,15 +37,19 @@ double d_t, double current_state, double target_state) {
 
 }
 /**
- * @brief Method to return gain constants
+ * @brief Mehtod to check constants
  * 
  * @param K_p 
  * @param K_i 
- * @return double 
+ * @param dt 
+ * @param curr 
+ * @param target 
+ * @return true 
+ * @return false 
  */
-double PID::returnPID(double K_p,double K_i)
+bool PID::check(double K_p,double K_i,double dt,double curr,double target)
 {
-    return K_p;
+    return true;
 }
 /**
  * @brief Method to compute method 
@@ -53,7 +58,7 @@ double PID::returnPID(double K_p,double K_i)
  * @param K_i 
  * @return double 
  */
-double PID::computePID(double K_p,double K_i)
+double PID::computePID()
 {
-    return (K_p*K_i);
+    return (PID::Kd*PID::Kp);
 }

@@ -24,7 +24,7 @@ PID test(1.0,1.0,1.0,1.0,1.0,1.0);
  * 
  */
 TEST(PID_test, test_computePID) {
-  EXPECT_NEAR(test.computePID(1.0,1.0), -3.0, 0.01);
+  EXPECT_NEAR(test.computePID(),-3.0,-1.0);
 }
 
 /**
@@ -32,6 +32,6 @@ TEST(PID_test, test_computePID) {
  * 
  */
 TEST(PID_test, test_output){
-  EXPECT_NEAR(test.returnPID(1.0,1.0), -3.0, 0.01);
+  EXPECT_FALSE(test.check(-1.0,1.0,1.0,1.0,1.0));
 }
 
