@@ -7,6 +7,9 @@ ENPM808X TDD Project (Fall 2023)
 Driver: Vyshnav Achuthan (Achuthankrishna) <br> 
 Navigator: Jerry Pittman, Jr. (jpittma1)
 
+![CICD Workflow status](https://github.com/Rashmikapu/ENPM808X-Test-Driven-Development-/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg) [![codecov](https://codecov.io/gh/Rashmikapu/ENPM808X-Test-Driven-Development-/branch/main/graph/badge.svg)](https://codecov.io/gh/Rashmikapu/ENPM808X-Test-Driven-Development-) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+
 ## UML Diagram 
 ![alt text](/UML/UML1.jpeg)
 
