@@ -17,21 +17,20 @@
  * @brief PID Object for unit tests
  * 
  */
-PID test(0.6,0.01,0.012,0.05,1.0,4.0);
+PID test(0.6, 0.01, 0.012, 0.05, 1.0, 4.0);
 
 /**
  * @brief Construct a new TEST object to test computePID Method
  * 
  */
 TEST(PID_test, test_computePID) {
-  EXPECT_NEAR(test.computePID(),4.0,1.0);
+  EXPECT_NEAR(test.computePID(), 4.0, 1.0);
 }
 
 /**
  * @brief Construct a new TEST object to test returnPID Method
  * 
  */
-TEST(PID_test, test_output){
-  EXPECT_FALSE(test.check(-0.6,1.0,0.012,0.05,1.0));
+TEST(PID_test, test_output) {
+  EXPECT_FALSE(test.check(-0.6, 1.0, 0.012, 0.05, 1.0));
 }
-
