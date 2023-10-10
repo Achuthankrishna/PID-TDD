@@ -7,13 +7,13 @@ ENPM808X TDD Project (Fall 2023)
 Driver: Vyshnav Achuthan (Achuthankrishna) <br> 
 Navigator: Jerry Pittman, Jr. (jpittma1)
 
-[![codecov](https://codecov.io/gh/Rashmikapu/PID-TDD/branch/master/graph/badge.svg)](https://codecov.io/gh/Rashmikapu/PID-TDD) 
+
 
 
 ## UML Diagram 
 ![alt text](/UML/UML1.jpeg)
 
-## Part 2 Authors
+## Part 2 Authors [![codecov](https://codecov.io/gh/Rashmikapu/PID-TDD/branch/master/graph/badge.svg)](https://codecov.io/gh/Rashmikapu/PID-TDD) 
 Driver: Neha Nitin Madhekar (NehaMadhekar09)<br>
 Navigator: Rashmi Kapu (Rashmikapu)
 
