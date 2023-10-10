@@ -17,7 +17,7 @@
  * @brief PID Object for unit tests
  * 
  */
-PID test(1.0,1.0,1.0,1.0,1.0,1.0);
+PID test(0.6,1.0,0.012,0.05,1.0,4.0);
 
 /**
  * @brief Construct a new TEST object to test computePID Method
@@ -32,6 +32,6 @@ TEST(PID_test, test_computePID) {
  * 
  */
 TEST(PID_test, test_output){
-  EXPECT_FALSE(test.check(-1.0,1.0,1.0,1.0,1.0));
+  EXPECT_FALSE(test.check(-0.6,1.0,0.012,0.05,1.0));
 }
 
